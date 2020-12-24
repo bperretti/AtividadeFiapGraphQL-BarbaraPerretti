@@ -1,0 +1,4 @@
+type Query{
+    produto:[Produto]
+    produto(id: Int): Produto
+}

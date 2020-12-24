@@ -1,0 +1,20 @@
+type Mutation{
+    novoProduto(
+        id:Int
+        nomeproduto:String
+        descricao:String
+        fornecedor:String
+        preco:Float
+        datacadastro:String
+    ):[Produto]
+
+    atualizarProduto(
+        id:Int
+        nomeproduto:String
+        descricao:String
+        fornecedor:String
+        preco:Float
+    ):Produto
+
+    excluirProduto(id: Int): Produto
+}
